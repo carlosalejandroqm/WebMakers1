@@ -22,10 +22,6 @@ width: 100%;
         }
 }
 
-footer{
-    background-color:#9e9e9e;
-    display:inline;
-}
 #redes a{
     color: #1c313a;
     
@@ -40,4 +36,11 @@ footer{
 }
 #imagenes img{
     width: 100%;
+}
+
+/* footer */
+footer{
+    background-color:teal;
+    display:inline;
+    color: white;
 }
