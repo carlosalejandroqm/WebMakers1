@@ -13,27 +13,28 @@
     <link rel="stylesheet" href="../css/fontawesome-free-5.13.0-web/css/brands.css"> 
     <link rel="stylesheet" href="../css/fontawesome-free-5.13.0-web/css/solid.css">
 
-  
-
 </head>
 <body>
-
+    <!-- barra de navegacion -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-toggleable-sm sticky-top">
-        <a class="navbar-brand" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/647px-Apple_logo_black.svg.png" alt="logo" 
-            class="d-inline-block aling-top"  style="width:40px;">
-            Manzana</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <a class="navbar-brand" href="#"><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/647px-Apple_logo_black.svg.png"
+                alt="logo" class="d-inline-block aling-top" style="width:40px;">
+            Manzana
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav mr-0 ml-auto mt-2 mt-lg-0 text-center">
-            <a class="nav-link" href="#">Marcas</a>
-            <a class="nav-link" href="#">Categorias</a>
-            <a class="nav-link active" href="#">Productos</a>
-            <a class="nav-link " href="#">Datos de la empresa</a>
-          </div>
+            <div class="navbar-nav mr-0 ml-auto mt-2 mt-lg-0 text-center">
+                <a class="nav-link " href="tablaMarca.php">Marcas</a>
+                <a class="nav-link active" href="tablaCategoria.php">Categorias</a>
+                <a class="nav-link" href="newProducto.php">Productos</a>
+                <a class="nav-link " href="empresa.php">Datos de la empresa</a>
+            </div>
         </div>
-      </nav>
+    </nav>
 <!--Carousel -->
       <div id="carrusel" class="carousel slide carousel-fade " data-ride="carousel">
         <div class="carousel-inner">
@@ -100,6 +101,9 @@
       ?>
     </tbody>
     </table>
+     <div style="margin-bottom: 15px;">
+       <a href="../html/categoria.html"><button type="submit" class="btn btn-success" id="listado">Agregar categoria</button></a>
+    </div>
 </div>
 
 <!--Modal-->
@@ -151,47 +155,41 @@
         
          ¿Desea eliminar categoria?
          <p id="espacio2"></p>
-        <div class="modal-footer">
-          <button type="submit" class="btn btn-primary" id="eliminar">Eliminar</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-          
-      </div>
+           <div class="modal-footer">
+              <button type="submit" class="btn btn-primary" id="eliminar">Eliminar</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>     
+           </div>
         </form>
         </div>
+        
     </div>
   </div>
 </div>
- <!--Footer-->
-<footer class="footer py-2">
+  <!-- Footer -->
+  <footer class="footer py-2">
     <div class="container ">
-        <div class="row">
-            <div class="col col-sm-10">
-                <b>Información de contacto</b> 
-                <br>
-                 Email: noheliviva@ufps.edu.co
-                <br>
-                Teléfono: 3132070709 
-            </div>
-                <div class="col col-sm-2" id="redes">
-                    <a href=""><i class="fab fa-facebook-square fa-2x" title="Facebook"></i></a>
-                    <a href=""><i class="fab fa-twitter-square fa-2x" title="Twitter"></i></a>
-                    <a href=""><i class="fab fa-instagram fa-2x" title="Instagram"></i></a>
-                    
-                    <br>
-                    <a href="#"data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
-                    <button type="submit" class="btn btn-primary btn-sm">Contactanos</button></a>
-            </div>
-            
-            
+      <div class="row">
+        <div class="col col-sm-10">
+          <b>Información de contacto</b>
+          <br>
+          Email: webmakers@gmail.com
+          <br>
+          Teléfono: 3132070709
         </div>
-        <div class="text-center">
-            Copyright © AÑO 2020
-            Autor: Noheli Villa Valencia
+        <div class="col col-sm-2" id="redes">
+          <a href=""><i class="fab fa-facebook-square fa-2x" title="Facebook"></i></a>
+          <a href=""><i class="fab fa-twitter-square fa-2x" title="Twitter"></i></a>
+          <a href=""><i class="fab fa-instagram fa-2x" title="Instagram"></i></a>
+          <br>
+          <a href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
+            <button type="button" class="btn btn-primary btn-sm">Contactanos</button></a>
         </div>
-          
+      </div>
+      <div class="text-center">
+        Licencia Creative Commons. Desarrollado por Web Makers 2020.
+      </div>
     </div>
-</footer>
-
+  </footer>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

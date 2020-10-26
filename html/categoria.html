@@ -16,25 +16,25 @@
 </head>
 
 <body>
-  <!-- barra de navegacion -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-toggleable-sm sticky-top">
-    <a class="navbar-brand" href="#"><img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/647px-Apple_logo_black.svg.png"
-        alt="logo" class="d-inline-block aling-top" style="width:40px;">
-      Manzana
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav mr-0 ml-auto mt-2 mt-lg-0 text-center">
-        <a class="nav-link " href="../html/marca.html">Marcas</a>
-        <a class="nav-link active " href="../html/categoria.html">Categorias</a>
-        <a class="nav-link" href="../html/detalleProducto.html">Productos</a>
-        <a class="nav-link " href="../html/contacto.html">Datos de la empresa</a>
+    <!-- barra de navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-toggleable-sm sticky-top">
+      <a class="navbar-brand" href="#"><img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/647px-Apple_logo_black.svg.png"
+              alt="logo" class="d-inline-block aling-top" style="width:40px;">
+          Manzana
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav mr-0 ml-auto mt-2 mt-lg-0 text-center">
+              <a class="nav-link " href="marca.html">Marcas</a>
+              <a class="nav-link " href="categoria.html">Categorias</a>
+              <a class="nav-link" href="newProducto.php">Productos</a>
+              <a class="nav-link active" href="empresa.php">Datos de la empresa</a>
+          </div>
       </div>
-    </div>
   </nav>
   <!--Carousel -->
   <div id="carrusel" class="carousel slide carousel-fade " data-ride="carousel">
@@ -82,6 +82,9 @@
         </div>
       </div>
     </form>
+    <div style="margin-bottom: 10px;">
+      <a href="../php/tablaCategoria.php"><button type="submit" class="btn btn-success" id="listado">Ver listado de categorias</button></a>
+    </div>
   </div>
   </div>
   <!--Footer-->
@@ -150,4 +153,5 @@
     });
   </script>
 </body>
+
 </html>
