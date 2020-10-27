@@ -29,36 +29,37 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav mr-0 ml-auto mt-2 mt-lg-0 text-center">
-                <a class="nav-link " href="tablaMarca.php">Marcas</a>
-                <a class="nav-link " href="tablaCategoria.php">Categorias</a>
-                <a class="nav-link" href="newProducto.php">Productos</a>
-                <a class="nav-link " href="empresa.php">Datos de la empresa</a>
-            </div>
+        <div class="navbar-nav mr-0 ml-auto mt-2 mt-lg-0 text-center">
+            <a class="nav-link " href="../index.html">Inicio</a>
+            <a class="nav-link " href="../html/marca.html">Marcas</a>
+            <a class="nav-link " href="../html/categoria.html">Categorias</a>
+            <a class="nav-link" href="producto.php">Productos</a>
+            <a class="nav-link active" href="empresa.php">Datos de la empresa</a>
+        </div>
         </div>
     </nav>
-<!--Carousel -->
-      <div id="carrusel" class="carousel slide carousel-fade " data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../images/css_coding-wallpaper-1024x576.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../images/robot_20-wallpaper-1024x576.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../images/lg_g3_ink-wallpaper-1024x576.jpg" class="d-block w-100" alt="...">
-          </div>
+  <!--Carousel -->
+  <div id="carrusel" class="carousel slide carousel-fade " data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="../images/Circular Cutaways Tumblr Banner.jpg" class="d-block w-100" alt="...">
         </div>
-        <a class="carousel-control-prev" href="#carrusel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carrusel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
+        <div class="carousel-item">
+            <img src="../images/Circular Cutaways Tumblr Banner (1).jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="../images/img_zapatos.jpg" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carrusel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carrusel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+  </div>
 <!--Tabla -->
 <div class="container text-center mt-4">
   <h3>Listado de marcas</h3>

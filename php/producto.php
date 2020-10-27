@@ -15,76 +15,77 @@
     
 </head>
 <body>
-   <!-- barra de navegacion -->
-   <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-toggleable-sm sticky-top">
-        <a class="navbar-brand" href="#"><img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/647px-Apple_logo_black.svg.png"
-                alt="logo" class="d-inline-block aling-top" style="width:40px;">
-            Manzana
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav mr-0 ml-auto mt-2 mt-lg-0 text-center">
-                <a class="nav-link " href="tablaMarca.php">Marcas</a>
-                <a class="nav-link " href="tablaCategoria.php">Categorias</a>
-                <a class="nav-link" href="newProducto.php">Productos</a>
-                <a class="nav-link " href="empresa.php">Datos de la empresa</a>
-            </div>
+    <!-- barra de navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-toggleable-sm sticky-top">
+    <a class="navbar-brand" href="#"><img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/647px-Apple_logo_black.svg.png"
+            alt="logo" class="d-inline-block aling-top" style="width:40px;">
+        Manzana
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mr-0 ml-auto mt-2 mt-lg-0 text-center">
+            <a class="nav-link " href="../index.html">Inicio</a>
+            <a class="nav-link " href="../html/marca.html">Marcas</a>
+            <a class="nav-link " href="../html/categoria.html">Categorias</a>
+            <a class="nav-link" href="producto.php">Productos</a>
+            <a class="nav-link active" href="empresa.php">Datos de la empresa</a>
         </div>
-    </nav>
-<!--Carousel -->
-      <div id="carrusel" class="carousel slide carousel-fade " data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../images/css_coding-wallpaper-1024x576.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../images/robot_20-wallpaper-1024x576.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../images/lg_g3_ink-wallpaper-1024x576.jpg" class="d-block w-100" alt="...">
-          </div>
+    </div>
+</nav>
+ <!--Carousel -->
+ <div id="carrusel" class="carousel slide carousel-fade " data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="../images/Circular Cutaways Tumblr Banner.jpg" class="d-block w-100" alt="...">
         </div>
-        <a class="carousel-control-prev" href="#carrusel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carrusel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
+        <div class="carousel-item">
+            <img src="../images/Circular Cutaways Tumblr Banner (1).jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="../images/img_zapatos.jpg" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carrusel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carrusel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+  </div>
 <!--From -->
 <div class="container text-center mt-4">
     <h3>Regitro de nuevo producto</h3>
 </div>
 <div class="container p-4 mt-5 mb-5 border shadow rounded col-sm-9" id="from">
-    <form>
+    <form action="Rproducto.php" method="POST" id="Fproducto">
         <div class="form-group row">
             <label for="inputEmail3" class="col-sm-2 col-form-label">Referencia</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="inputEmail3">
+              <input type="text" class="form-control" name="referencia"  id="inputEmail3">
             </div>
           </div>
         <div class="form-group row">
           <label for="inputEmail3" class="col-sm-2 col-form-label">Nombre</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputEmail3">
+            <input type="text" class="form-control" name="nombre" id="inputEmail3">
           </div>
         </div>
         <div class="form-group row">
           <label for="inputEmail3" class="col-sm-2 col-form-label">Valor</label>
           <div class="col-sm-10">
-            <input type="number" class="form-control" id="inputEmail3">
+            <input type="number" class="form-control"  name="valor" id="inputEmail3">
           </div>
         </div>
         <div class="form-group row">
           <label for="inputEmail3" class="col-sm-2 col-form-label">Marca</label>
           <div class="col-sm-10">
-          <select class="form-control">
+          <select   name="marca" class="form-control">
                 <option value="0">Seleccione</option>
                 <?php
             require("conexion.php");
@@ -92,7 +93,7 @@
             $resultado = $conexion->query($consulta);
             while ($fila = $resultado->fetch_assoc()) {
               ?>
-                    <option value="<?php echo $fila['id']; ?>"><?php echo $fila['nombre']; ?></option>
+                    <option value="<?php echo $fila['id']; ?>"><?php echo $fila['nombre'][0]; ?></option>
                     <?php
                                   }
                 ?>
@@ -103,7 +104,7 @@
           <label for="inputEmail3" class="col-sm-2 col-form-label">Categoría</label>
           <div class="col-sm-10">
 
-              <select class="form-control">
+              <select  name="categoria" class="form-control">
                 <option value="0">Seleccione</option>
                 <?php
             require("conexion.php");
@@ -111,7 +112,7 @@
             $resultado = $conexion->query($consulta);
             while ($fila = $resultado->fetch_assoc()) {
               ?>
-                    <option value="<?php echo $fila['id']; ?>"><?php echo $fila['nombre']; ?></option>
+                    <option  value="<?php echo $fila['id']; ?>"><?php echo $fila['nombre']; ?></option>
                     <?php
                                   }
                 ?>
@@ -122,21 +123,21 @@
         <div class="form-group row">
           <label for="message-text" class="col-sm-2 col-form-label">Descripción</label>
           <div class="col-sm-10">
-            <textarea class="form-control" id="message-text"placeholder=""></textarea> 
+            <textarea class="form-control"  name="descripcion" id="message-text"placeholder=""></textarea> 
           </div>
         </div>
         <div class="form-group row">
           <label for="inputEmail3" class="col-sm-2 col-form-label">Detalle</label>
           <div class="col-sm-10">
-            <textarea class="form-control" id="message-text"placeholder=""></textarea> 
+            <textarea class="form-control"  name="detalle" id="message-text"placeholder=""></textarea> 
           </div>
         </div>
-        <div class="form-group row">
+        <!-- <div class="form-group row">
           <label for="inputEmail3" class="col-sm-2 col-form-label">Imagen</label>
           <div class="col-sm-10">
             <input type="file" class="form-control-file" id="default" placeholder="Name"> 
           </div>
-        </div>
+        </div> -->
     
         <div class="form-group row text-center">
           <div class="col-sm-12">
@@ -144,6 +145,7 @@
           </div>
         </div>
       </form>
+      <a href="tablaProducto.php"><button type="submit" class="btn btn-success" id="listado">Ver listado de empresas</button></a>
 </div>
 <div class="container" id="contenedor"></div>
   <!-- Footer -->
@@ -183,5 +185,21 @@
     crossorigin="anonymous"></script>     
 <script src="../js/datos.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>   
+
+  <script type="text/javascript">
+    <?php
+      if(isset($_GET['alert'])){
+        if($_GET['alert'] == 1 ){
+          echo 'alert("el producto se agregó")';
+        }else if($_GET['alert'] == 2 ){
+          echo 'alert("El producto no ha sido registrada")';
+        }else if ($_GET['alert'] == 3  ) {
+          echo 'alert("El producto ya existe)';
+        }else{
+          echo 'alert("Llenar todos los campo")';
+        }
+      }
+    ?>
+  </script>
 </body>
 </html>
