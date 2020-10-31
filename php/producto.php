@@ -104,7 +104,7 @@
           <label for="inputEmail3" class="col-sm-2 col-form-label">Categoría</label>
           <div class="col-sm-10">
 
-              <select  class="form-control">
+              <select name="categoria" class="form-control">
                 <option value="0">Seleccione</option>
                 <?php
             require("conexion.php");
