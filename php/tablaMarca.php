@@ -31,10 +31,10 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav mr-0 ml-auto mt-2 mt-lg-0 text-center">
             <a class="nav-link " href="../index.html">Inicio</a>
-            <a class="nav-link " href="../html/marca.html">Marcas</a>
+            <a class="nav-link active" href="../html/marca.html">Marcas</a>
             <a class="nav-link " href="../html/categoria.html">Categorias</a>
             <a class="nav-link" href="producto.php">Productos</a>
-            <a class="nav-link active" href="empresa.php">Datos de la empresa</a>
+            <a class="nav-link " href="empresa.php">Datos de la empresa</a>
         </div>
         </div>
     </nav>

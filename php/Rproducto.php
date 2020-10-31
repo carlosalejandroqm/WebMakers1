@@ -10,7 +10,7 @@ $descripcion=$_POST ['descripcion'];
 $detalle=$_POST ['detalle'];
 
 
-if (!$referencia == "" && !$nombre == "" && !$valor == "" && isset($_POST['marca']) && isset($_POST['categoria']) && !$descripcion == "" && !$detalle == "") {
+if (!$referencia == "" && !$nombre == "" && !$valor == "" && !$marca =="" && !$categoria == "" && !$descripcion == "" && !$detalle == "") {
     require("conexion.php");
     $saber="SELECT nombre FROM producto WHERE nombre='$nombre'";
     $saberBD=$conexion->query($saber);
@@ -21,7 +21,7 @@ if (!$referencia == "" && !$nombre == "" && !$valor == "" && isset($_POST['marca
         VALUES('$referencia','$nombre','$valor','$marca','$categoria','$descripcion','$detalle')";
         $saberBD=$conexion->query($saber);
         if ($saberBD) {
-            header('Location: producto.php?alert=1');
+            header('Location: producto.php');
         }else{
             echo 2;
         }

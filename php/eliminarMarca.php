@@ -14,6 +14,7 @@ $id=$_POST['id'];
     <script> window.alert("La marca no fue eliminada")</script>
     <?php
    }
+   header('Location: tablaMarca.php');
 
 
 ?>

@@ -33,8 +33,8 @@
                 <a class="nav-link " href="../index.html">Inicio</a>
                 <a class="nav-link " href="../html/marca.html">Marcas</a>
                 <a class="nav-link " href="../html/categoria.html">Categorias</a>
-                <a class="nav-link" href="producto.php">Productos</a>
-                <a class="nav-link active" href="empresa.php">Datos de la empresa</a>
+                <a class="nav-link active" href="producto.php">Productos</a>
+                <a class="nav-link " href="empresa.php">Datos de la empresa</a>
             </div>
         </div>
     </nav>
@@ -116,16 +116,72 @@
       </div>
       <div class="modal-body">
     
-      <form action="editarProducto.php" id="Fproducto" method="POST">
-          <div class="form-group">
-           
-            <p id="espacio"></p>
-            <label for="recipient-name" class="col-form-label">Referencia:</label>
-            <input type="text" class="form-control" name="nombre" id="recipient-name" require>
+      <form action="editarProducto.php" method="POST">
+      <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Referencia</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="referencia"  id="inputEmail3">
+            </div>
           </div>
-          <div class="form-group">
-            <label for="message-text" class="col-form-label">Nombre:</label>
-            <textarea class="form-control" id="message-text" name="descri" require></textarea>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Nombre</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" name="nombre" id="inputEmail3">
+          </div>
+        </div>
+          <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Valor</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control"  name="valor" id="inputEmail3">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Marca</label>
+          <div class="col-sm-10">
+          <select   name="marca" class="form-control">
+                <option value="0">Seleccione</option>
+                <?php
+            require("conexion.php");
+            $consulta = "SELECT * FROM marca";
+            $resultado = $conexion->query($consulta);
+            while ($fila = $resultado->fetch_assoc()) {
+              ?>
+                    <option value="<?php echo $fila['id']; ?>"><?php echo $fila['nombre']; ?></option>
+                    <?php
+                                  }
+                ?>
+              </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Categoría</label>
+          <div class="col-sm-10">
+
+              <select  class="form-control">
+                <option value="0">Seleccione</option>
+                <?php
+            require("conexion.php");
+            $consulta = "SELECT * FROM categoria";
+            $resultado = $conexion->query($consulta);
+            while ($fila = $resultado->fetch_assoc()) {
+              ?>
+                    <option  value="<?php echo $fila['id']; ?>"><?php echo $fila['nombre']; ?></option>
+                    <?php
+                                  }
+                ?>
+              </select>  
+          </div>  
+        </div>
+        <div class="form-group row">
+          <label for="message-text" class="col-sm-2 col-form-label">Descripción</label>
+          <div class="col-sm-10">
+            <textarea class="form-control"  name="descripcion" id="message-text"placeholder=""></textarea> 
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Detalle</label>
+          <div class="col-sm-10">
+            <textarea class="form-control"  name="detalle" id="message-text"placeholder=""></textarea> 
           </div>
           <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>

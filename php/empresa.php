@@ -131,7 +131,6 @@
       </form>
       <a href="tablaEmpresa.php"><button type="submit" class="btn btn-success" id="listado">Ver listado de empresas</button></a>
 </div>
-Modal
 <div class="modal fade" id="exampleModal" tabindex="-1" data-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">

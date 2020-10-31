@@ -3,13 +3,11 @@ $referencia=$_POST ['referencia'];
 $nombre=$_POST ['nombre'];
 $valor=$_POST ['valor'];
 $marca=$_POST ['marca'];
-// echo $marca; 
 $categoria=$_POST ['categoria'];
-// echo $categoria;
 $descripcion=$_POST ['descripcion'];
 $detalle=$_POST ['detalle'];
 
-if (!$referencia == "" && !$nombre == "" && !$valor == "" && isset($_POST['marca']) && isset($_POST['categoria']) && !$descripcion == "" && !$detalle == "") {
+if (!$referencia == "" && !$nombre == "" && !$valor == "" && !$marca="" && !$categoria == "" && !$descripcion == "" && !$detalle == "") {
     require("conexion.php");
     $saber="SELECT nombre FROM producto WHERE nombre='$nombre'";
     $saberBD=$conexion->query($saber);

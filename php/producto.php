@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuevo producto</title>
-    <link rel="stylesheet" href="../css/estilo.css">
+    <title>producto</title>
+    <link rel="style  sheet" href="../css/estilo.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -31,8 +31,8 @@
             <a class="nav-link " href="../index.html">Inicio</a>
             <a class="nav-link " href="../html/marca.html">Marcas</a>
             <a class="nav-link " href="../html/categoria.html">Categorias</a>
-            <a class="nav-link" href="producto.php">Productos</a>
-            <a class="nav-link active" href="empresa.php">Datos de la empresa</a>
+            <a class="nav-link active" href="producto.php">Productos</a>
+            <a class="nav-link " href="empresa.php">Datos de la empresa</a>
         </div>
     </div>
 </nav>
@@ -93,7 +93,7 @@
             $resultado = $conexion->query($consulta);
             while ($fila = $resultado->fetch_assoc()) {
               ?>
-                    <option value="<?php echo $fila['id']; ?>"><?php echo $fila['nombre'][0]; ?></option>
+                    <option value="<?php echo $fila['id']; ?>"><?php echo $fila['nombre']; ?></option>
                     <?php
                                   }
                 ?>
@@ -104,7 +104,7 @@
           <label for="inputEmail3" class="col-sm-2 col-form-label">Categoría</label>
           <div class="col-sm-10">
 
-              <select  name="categoria" class="form-control">
+              <select  class="form-control">
                 <option value="0">Seleccione</option>
                 <?php
             require("conexion.php");
@@ -145,7 +145,7 @@
           </div>
         </div>
       </form>
-      <a href="tablaProducto.php"><button type="submit" class="btn btn-success" id="listado">Ver listado de empresas</button></a>
+      <a href="tablaProducto.php"><button type="submit" class="btn btn-success" id="listado">Ver listado de productos</button></a>
 </div>
 <div class="container" id="contenedor"></div>
   <!-- Footer -->

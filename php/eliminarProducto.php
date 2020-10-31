@@ -6,6 +6,7 @@ $id=$_POST['id'];
     $saber="DELETE FROM producto  WHERE id='$id'";
     $saberBD=$conexion->query($saber);
    if($saberBD){
+    header('Location: listaProducto.php');
     ?> 
     <script> window.alert("El producto fue eliminado")</script>
     <?php
